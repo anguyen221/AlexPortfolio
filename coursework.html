@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>AlexPortfolio | Coursework</title>
+  <meta name="description" content="Coursework completed by Alex Nguyen - Computer Science major at GSU" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Coursework Grid */
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 30px;
+    }
+
+    .course-card {
+      background-color: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgb(11 29 58 / 0.1);
+      transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    .course-card:hover {
+      box-shadow: 0 5px 15px rgb(11 29 58 / 0.25);
+      border-color: #0b1d3a;
+    }
+
+    .course-card h4 {
+      color: #0b1d3a;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .course-card p {
+      color: #374151;
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-bar">
+      <h1 class="logo"><a href="index.html">AlexPortfolio</a></h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Résumé</a></li>
+          <li><a class="active" href="coursework.html">Coursework</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Coursework Section -->
+  <main>
+    <section class="container" style="padding: 80px 0;">
+      <h2 style="font-size: var(--step-4); margin-bottom: 20px; color: var(--navy);">Coursework</h2>
+      <p>Here are some of the core Computer Science courses I’ve completed at Georgia State University:</p>
+
+      <div class="course-grid">
+        <div class="course-card"><h4>Software Engineering</h4></div>
+        <div class="course-card"><h4>Data Structures</h4></div>
+        <div class="course-card"><h4>Computer Organization & Programming</h4></div>
+        <div class="course-card"><h4>System-Level Programming</h4></div>
+        <div class="course-card"><h4>Operating Systems</h4></div>
+        <div class="course-card"><h4>Programming Language Concepts</h4></div>
+        <div class="course-card"><h4>Design & Analysis of Algorithms</h4></div>
+        <div class="course-card"><h4>Computer Networks</h4></div>
+        <div class="course-card"><h4>Fundamentals of Cybersecurity</h4></div>
+        <div class="course-card"><h4>Mobile App Development</h4></div>
+        <div class="course-card"><h4>Fundamentals of Data Science</h4></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 AlexPortfolio.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
