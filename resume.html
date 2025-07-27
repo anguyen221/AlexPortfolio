@@ -7,6 +7,53 @@
   <meta name="description" content="Alex Nguyen's résumé - Computer Science major at GSU">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .resume-section {
+      margin-bottom: 50px;
+    }
+
+    .resume-section h3 {
+      color: var(--navy);
+      font-size: var(--step-2);
+      margin-bottom: 12px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 4px;
+    }
+
+    .resume-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .resume-download {
+      margin-bottom: 40px;
+    }
+
+    .resume-download a {
+      display: inline-block;
+      background-color: var(--navy);
+      color: white;
+      padding: 10px 18px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.2s ease;
+    }
+
+    .resume-download a:hover {
+      background-color: #003355;
+    }
+
+    .contact-info p,
+    .contact-info a {
+      margin: 4px 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  </style>
 </head>
 
 <body>
@@ -32,8 +79,13 @@
     <section class="container" style="padding: 80px 0;">
       <h2 style="font-size: var(--step-4); margin-bottom: 20px; color: var(--navy);">Résumé</h2>
 
+      <div class="resume-download">
+        <a href="AlexNguyen_Resume.pdf" download>Download PDF Résumé</a>
+      </div>
+
       <!-- Contact Info -->
-      <div style="margin-bottom: 40px;">
+      <div class="resume-section contact-info">
+        <h3>Contact</h3>
         <p><strong>Alex Nguyen</strong></p>
         <p>4709 Snap Creek LN</p>
         <p>470-263-3337</p>
@@ -41,60 +93,65 @@
         <p><a href="https://www.linkedin.com/in/alex-nguyen-10a002348/" target="_blank">LinkedIn Profile</a></p>
       </div>
 
-      <!-- Objective Statement -->
-      <div style="margin-bottom: 40px;">
-        <h3>Objective Statement</h3>
+      <!-- Objective -->
+      <div class="resume-section">
+        <h3>Objective</h3>
         <p>
-          I am a resourceful and driven Computer Science major with a strong foundation in software development,
-          data structures, and full-stack web technologies. I am passionate about building scalable,
-          user-centric applications and solving real-world problems through clean, efficient code.
-          I am seeking a software engineering internship or junior developer role to contribute to meaningful projects,
-          collaborate with skilled teams, and continue sharpening my skills in a fast-paced environment.
+          Resourceful and driven Computer Science major with a strong foundation in software development,
+          data structures, and full-stack web technologies. Passionate about building scalable, user-centric
+          applications and solving real-world problems through clean code. Seeking a software engineering internship
+          or junior developer role to contribute to meaningful projects and grow in a collaborative environment.
         </p>
       </div>
 
       <!-- Experience -->
-      <div style="margin-bottom: 40px;">
+      <div class="resume-section">
         <h3>Experience</h3>
-        <p>NO FORMAL WORK EXPERIENCE</p>
+        <p>No formal work experience.</p>
       </div>
 
       <!-- Education -->
-      <div style="margin-bottom: 40px;">
+      <div class="resume-section">
         <h3>Education</h3>
-        <p>BA in Computer Science / Georgia State University</p>
-        <p>December 2025</p>
+        <p><strong>BA in Computer Science</strong></p>
+        <p>Georgia State University – Expected December 2025</p>
       </div>
 
       <!-- Skills -->
-      <div style="margin-bottom: 40px;">
+      <div class="resume-section">
         <h3>Skills</h3>
-        <ul>
-          <li>Programming Languages: Python, Java, C++, JavaScript</li>
-          <li>Full-Stack Web Development: React & Node.js</li>
-          <li>Code Debugging</li>
-          <li>Data Structures & Algorithms</li>
-          <li>Version Control: Git/GitHub</li>
-          <li>Clear communication, collaboration, and teamwork</li>
-        </ul>
+        <div class="resume-columns">
+          <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>JavaScript</li>
+          </ul>
+          <ul>
+            <li>React & Node.js</li>
+            <li>Data Structures & Algorithms</li>
+            <li>Git / GitHub</li>
+            <li>Debugging & Troubleshooting</li>
+          </ul>
+        </div>
+        <p style="margin-top: 10px;">Soft Skills: Communication, teamwork, attention to detail</p>
       </div>
 
       <!-- Activities -->
-      <div>
+      <div class="resume-section">
         <h3>Activities</h3>
         <p>
-          In my free time, I like to build small-scale passion projects on my own time.
-          Typically, they are game development projects. Additionally, I like to explore new frameworks and tools in computer science.
+          I build small-scale passion projects in my spare time, often focused on game development.
+          I also enjoy exploring new frameworks and development tools to expand my technical toolkit.
         </p>
       </div>
-
     </section>
   </main>
 
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>© 2025 AlexPortfolio.</p>
+      <p>© 2025 AlexPortfolio. Created and designed by Alex Nguyen.</p>
     </div>
   </footer>
 
