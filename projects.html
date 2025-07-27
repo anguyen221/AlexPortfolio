@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>AlexPortfolio | Projects</title>
+  <meta name="description" content="Projects by Alex Nguyen" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Projects Grid */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
+      margin-top: 40px;
+    }
+
+    .project-card {
+      background-color: #ffffff;
+      border: 2px solid #0b1d3a;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 2px 8px rgb(11 29 58 / 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    .project-card:hover {
+      box-shadow: 0 8px 20px rgb(11 29 58 / 0.3);
+      border-color: #06142a;
+    }
+
+    .project-title {
+      font-size: 1.5rem;
+      color: #0b1d3a;
+      margin-bottom: 14px;
+      font-weight: 700;
+    }
+
+    .project-desc {
+      flex-grow: 1;
+      font-size: 1rem;
+      color: #374151;
+      margin-bottom: 20px;
+      min-height: 60px;
+    }
+
+    .btn-github {
+      align-self: flex-start;
+      background-color: #0b1d3a;
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-github:hover {
+      background-color: #06142a;
+    }
+
+    /* Header */
+    .projects-header {
+      text-align: center;
+      padding: 80px 0 20px;
+    }
+
+    .projects-header h2 {
+      font-size: var(--step-4);
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+
+    .projects-header p {
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-bar">
+      <h1 class="logo"><a href="index.html">AlexPortfolio</a></h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Résumé</a></li>
+          <li><a href="coursework.html">Coursework</a></li>
+          <li><a class="active" href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Projects Section -->
+  <main>
+    <section class="container">
+      <div class="projects-header">
+        <h2>Projects</h2>
+        <p>Here are some projects I’ve built or contributed to — check out the code and demos on GitHub.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3 class="project-title">Weatherly</h3>
+          <p class="project-desc">A weather forecast app providing accurate and up-to-date weather information using public APIs.</p>
+          <a href="https://github.com/anguyen221/Weatherly" target="_blank" class="btn-github" rel="noopener noreferrer">View on GitHub</a>
+        </article>
+
+        <article class="project-card">
+          <h3 class="project-title">PawCare</h3>
+          <p class="project-desc">A pet care management platform that helps users track their pets' health, appointments, and nutrition.</p>
+          <a href="https://github.com/anguyen221/PawCare" target="_blank" class="btn-github" rel="noopener noreferrer">View on GitHub</a>
+        </article>
+
+        <article class="project-card">
+          <h3 class="project-title">ParkNet Digital</h3>
+          <p class="project-desc">A network application project focusing on improving digital communication and connectivity in parks.</p>
+          <a href="https://github.com/KrishnaDOS/ParkNet_Digital" target="_blank" class="btn-github" rel="noopener noreferrer">View on GitHub</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 AlexPortfolio. Created and designed by Alex Nguyen.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
